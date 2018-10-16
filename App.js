@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image} from 'react-native';
 import Greeting from './src/components/Greeting';
-
+import Blink from './src/components/Blink';
 
 export default class App extends React.Component {
   render() {
@@ -12,8 +12,8 @@ export default class App extends React.Component {
       <View style={styles.container}>
       <Image source={pic} style={{width: 193, height: 110}}/>
         <Text>Open up App.js to start working on your app!!!!</Text>
-        <Text>Helo мир</Text>
         <Greeting name='Valera'/>
+        <Blink text='Blinking text !!!!!'/>
       </View>
     );
   }
@@ -27,11 +27,3 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
-
-// class Greeting extends React.Component {
-//   render() {
-//     return (
-//       <Text>Hello {this.props.name}!</Text>
-//     );
-//   }
-// }
